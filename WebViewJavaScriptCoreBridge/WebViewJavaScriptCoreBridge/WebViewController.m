@@ -61,7 +61,6 @@
         self.jsContext[key] = [[objectClass alloc] init];
     }
     
-    
     self.jsContext.exceptionHandler = ^(JSContext *context, JSValue *exception) {
         context.exception  = exception;
         NSLog(@"jsContext错误:%@",exception);
